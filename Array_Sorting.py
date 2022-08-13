@@ -40,8 +40,8 @@ class Solution:
         for i in ans:
             print(i,end=" ")
         print()
-TC: O(n^2)
-SC:O(1)
+#TC: O(n^2)
+#SC:O(1)
   
 #Solution using sorted function - Better one in terms of complexity :)
 class Solution:
@@ -55,7 +55,7 @@ if __name__=='__main__':
         for i in ans:
             print(i,end=" ")
         print()
-Time Complexity: O(nLogn) → Improved
-Space Complexity: O(1)
+#Time Complexity: O(nLogn) → Improved
+#Space Complexity: O(1)
 
 
