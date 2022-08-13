@@ -38,3 +38,17 @@ array=[1,2,4,3,5,7,8,9,10]
 ob=Solution()
 
 print(ob.MissingNumber(array,n))
+
+#Solution 2 - FASTEST Solution, yayyy
+
+class Solution:
+   
+    def MissingNumber(self,array,n):
+        a=[]
+        b=0
+        for i in range(1,n+1):
+            a.append(i)
+        b=list(set(a)-set(array))
+        
+        return b[0]
+# we can take difference of two sets 
