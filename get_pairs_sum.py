@@ -22,3 +22,24 @@ print(ob.getPairsCount(arr,n,k))
 
 #TC: O(n^2)  -- need to find O(n)
 #SC:O(1)
+
+#Solution 2
+
+class Solution:
+    def getPairsCount(self,arr,n,k):
+        diff=0
+        a=[]
+        
+        for i in range(0,len(arr)):
+            diff=k-arr[i]
+            if diff in arr[i+1:n+1]:
+                a.append((arr[i],diff))
+        return a
+ #size of the array        
+n=int(input())
+#enter the sum you want to check
+k=int(input())
+#array defined
+arr=[1,2,4,3,5,7,8,9,10]
+ob=Solution()
+print(ob.getPairsCount(arr,n,k))
